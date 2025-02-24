@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./coffee.jpg");
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+button{
+    background-color: black;
+    color: white;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fa-circle-up{
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    color: white;
+    font-size: 50px;
+    opacity: 0.5;
+    
+}
+
+img{
+    border-radius: 5px;
+    
+}
+#top{
+    border-radius: 10px;
+}
+
+span{
+    font-size: 50px;
+    
+}
+
+button:hover{
+    background-color: blue;
+}
+
+a:hover {
+    color: blue;
+}
+
+.news{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red; 
+    border-radius: 10px;
+    background-image: url(./dwnload.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes slide {
+    50%{
+        background-image: url(./dwnload.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    70%{
+        background-image: url(./coffee.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(./backg.jpg);
+        background-size: cover ;
+    }
+}
+
